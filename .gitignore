@@ -1,0 +1,15 @@
+.env
+*.log
+.DS_Store
+
+# Go
+backend/bin/
+
+# Android / Gradle
+.gradle/
+build/
+*/build/
+local.properties
+.idea/
+*.iml
+

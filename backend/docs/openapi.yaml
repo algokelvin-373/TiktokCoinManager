@@ -1,0 +1,41 @@
+openapi: 3.0.3
+info:
+  title: TikTok Coin Manager API
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080
+paths:
+  /api/v1/transactions:
+    get:
+      summary: Get transactions
+      responses:
+        "200":
+          description: Transactions retrieved successfully
+    post:
+      summary: Create transaction
+      responses:
+        "201":
+          description: Transaction created successfully
+  /api/v1/transactions/{id}:
+    get:
+      summary: Get transaction detail
+      responses:
+        "200":
+          description: Transaction retrieved successfully
+    put:
+      summary: Update transaction
+      responses:
+        "200":
+          description: Transaction updated successfully
+    delete:
+      summary: Delete transaction
+      responses:
+        "200":
+          description: Transaction deleted successfully
+  /api/v1/dashboard/summary:
+    get:
+      summary: Get dashboard summary
+      responses:
+        "200":
+          description: Dashboard summary retrieved successfully
+
